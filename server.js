@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+
 var app = express();
 var cors = require('cors');
 
@@ -21,6 +22,6 @@ app.get('/editor', function(req, res) {
 });
 
 // The in-email representation.
-app.post('/api/resolver', cors(corsOptions), require('./api/resolver'));
+app.post('api/resolver', cors(corsOptions), require('./api/resolver'));
 
 app.listen(process.env.PORT || 8910);
