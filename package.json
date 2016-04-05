@@ -1,10 +1,10 @@
 {
-  "name": "mixmax-google-forms",
+  "name": "mixmax-app-icon",
   "version": "0.0.1",
-  "description": "Giphy App for embedding Google Forms",
+  "description": "Giphy App for embedding icons that link to app stores",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
