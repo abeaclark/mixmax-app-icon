@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded());
 
 // Since Mixmax calls this API directly from the client-side, it must be whitelisted.
 var corsOptions = {
-  origin: /^[^.\s]+\.mixmax\.com$/,
+  origin: /https:\/\/compose.mixmax\.com\//,
   credentials: true
 };
 
