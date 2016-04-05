@@ -10,16 +10,10 @@ app.use(express.static(__dirname + '/public'));
 // So we can POST.
 app.use(bodyParser.urlencoded());
 
-
-
-// Since Mixmax calls this API directly from the client-side, it must be whitelisted.
 var corsOptions = {
   origin: true,
   credentials: true
 };
-
-app.use(cors(corsOptions));
-
 
 // The editor interface.
 app.get('/editor', function(req, res) {
@@ -27,6 +21,6 @@ app.get('/editor', function(req, res) {
 });
 
 // The in-email representation.
-app.post('api/resolver', require('./api/resolver'));
+app.post('api/resolver', cors(corsOptions), require('./api/resolver'));
 
 app.listen(process.env.PORT || 8910);
