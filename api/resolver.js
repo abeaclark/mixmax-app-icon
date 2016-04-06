@@ -24,7 +24,7 @@ module.exports = function(req, res) {
     amazon_link = "<a href='" + amazon_link + "' ><img src='https://i.imgsafe.org/4514322.png'></a>"
   }
 
-  var html = "<span>" + "test" apple_link + google_link + windows_link + amazon_link +"</span>"
+  var html = "<span>" + apple_link + google_link + windows_link + amazon_link +"</span>"
 
   // var html = '<span><img src="https://zello.com/img/appstore.png"></span>'
 
