@@ -1,6 +1,6 @@
 module.exports = function(req, res) {
 
-  var data = req.body.params
+  var data = JSON.parse(req.body.params)
   console.log(data)
 
   console.log('data.apple', data.apple)
