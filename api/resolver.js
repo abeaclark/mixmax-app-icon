@@ -9,24 +9,24 @@ module.exports = function(req, res) {
   var amazon_link = data['amazon'] || ''
 
   if (apple_link) {
-    apple_link = "<a href='" + apple_link + "' ><img src='http://mixmax-app-icon.herokuapp.com/img/apple.png'></a>"
+    apple_link = "<a href='" + apple_link + "' ><img src='https://i.imgsafe.org/459aed6.png'></a>"
   }
 
   if (google_link) {
-    google_link = "<a href='" + google_link + "' ><img src='http://mixmax-app-icon.herokuapp.com/img/apple.png'></a>"
+    google_link = "<a href='" + google_link + "' ><img src='https://i.imgsafe.org/469418c.png'></a>"
   }
 
   if (windows_link) {
-    windows_link = "<a href='" + windows_link + "' ><img src='http://mixmax-app-icon.herokuapp.com/img/apple.png'></a>"
+    windows_link = "<a href='" + windows_link + "' ><img src='https://i.imgsafe.org/4787215.png'></a>"
   }
 
   if (amazon_link) {
-    amazon_link = "<a href='" + amazon_link + "' ><img src='http://mixmax-app-icon.herokuapp.com/img/apple.png'></a>"
+    amazon_link = "<a href='" + amazon_link + "' ><img src='https://i.imgsafe.org/4514322.png'></a>"
   }
 
   var html = "<div>" + apple_link + google_link + windows_link + amazon_link +"</div>"
 
-  var html = '<span><img src="https://zello.com/img/appstore.png"></span>'
+  // var html = '<span><img src="https://zello.com/img/appstore.png"></span>'
 
   res.json({
     body: html
