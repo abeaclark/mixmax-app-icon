@@ -26,7 +26,7 @@ module.exports = function(req, res) {
 
   var html = "<div>" + apple_link + google_link + windows_link + amazon_link +"</div>"
 
-  var html = '<span>TEXT HERE</span>'
+  var html = '<span><img src="https://zello.com/img/appstore.png"></span>'
 
   res.json({
     body: html
