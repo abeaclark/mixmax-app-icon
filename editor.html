@@ -28,11 +28,6 @@
       </div>
 
       <div class="input-group input-group-lg">
-        <span class="input-group-addon" id="windows" ><img src="/img/windows.png"></span>
-        <input type="text" class="form-control" placeholder="https://www.microsoft.com/store/apps/1" aria-describedby="windows">
-      </div>
-
-      <div class="input-group input-group-lg">
         <span class="input-group-addon" id="amazon" ><img src="/img/amazon.png"></span>
         <input type="text" class="form-control" placeholder="http://www.amazon.com/gp/mas/dl/android/com.app.www" aria-describedby="amazon">
       </div>
@@ -52,14 +47,12 @@
   var done = function(e) {
         var apple = $('#apple').next().val();
         var google = $('#google').next().val();
-        var windows = $('#windows').next().val();
         var amazon = $('#amazon').next().val();
 
         // Let Mixmax know it was done.
         Mixmax.done({
           apple: apple,
           google: google,
-          windows: windows,
           amazon: amazon,
         });
       }
