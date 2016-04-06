@@ -1,6 +1,6 @@
 module.exports = function(req, res) {
-  console.log('req.body', req.body)
-  var data = JSON.parse(req.body.params);
+  // console.log('req.body', req.body)
+  // var data = JSON.parse(req.body.params);
   // if (!data) {
   //   res.status(403  Unauthorized  ).send('Invalid params');
   //   return;
