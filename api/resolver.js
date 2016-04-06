@@ -17,19 +17,19 @@ module.exports = function(req, res) {
   console.log(amazon_link)
 
   if (apple_link) {
-    apple_link = "<a href='" + apple_link + "' ><img style='height: 20px;' src='https://i.imgsafe.org/459aed6.png'></a>"
+    apple_link = "<a href='" + apple_link + "' ><img style='height: 35px; display: inline;' src='https://i.imgsafe.org/459aed6.png'></a>"
   }
 
   if (google_link) {
-    google_link = "<a href='" + google_link + "' ><img style='height: 20px;' src='https://i.imgsafe.org/469418c.png'></a>"
+    google_link = "<a href='" + google_link + "' ><img style='height: 35px; display: inline;' src='https://i.imgsafe.org/469418c.png'></a>"
   }
 
   if (windows_link) {
-    windows_link = "<a href='" + windows_link + "' ><img style='height: 20px;' src='https://i.imgsafe.org/4787215.png'></a>"
+    windows_link = "<a href='" + windows_link + "' ><img style='height: 35px; display: inline;' src='https://i.imgsafe.org/4787215.png'></a>"
   }
 
   if (amazon_link) {
-    amazon_link = "<a href='" + amazon_link + "' ><img style='height: 20px;' src='https://i.imgsafe.org/4514322.png'></a>"
+    amazon_link = "<a href='" + amazon_link + "' ><img style='height: 35px; display: inline;' src='https://i.imgsafe.org/4514322.png'></a>"
   }
 
   console.log(apple_link)
