@@ -18,7 +18,7 @@ module.exports = function(req, res) {
     amazon_link = "<a href='" + amazon_link + "' ><img style='height: 35px; display: inline;' src='https://i.imgsafe.org/4514322.png'></a>"
   }
 
-  var html = "<div style='width: 100%;'>" + apple_link + google_link + amazon_link +"</div>"
+  var html = "<div style='width: 100%; min-width: 350px'>" + apple_link + google_link + amazon_link +"</div>"
 
   res.json({
     body: html
