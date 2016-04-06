@@ -8,6 +8,11 @@ module.exports = function(req, res) {
   var windows_link = data['windows'] || ''
   var amazon_link = data['amazon'] || ''
 
+  console.log(apple_link)
+  console.log(google_link)
+  console.log(windows_link)
+  console.log(amazon_link)
+
   if (apple_link) {
     apple_link = "<a href='" + apple_link + "' ><img src='https://i.imgsafe.org/459aed6.png'></a>"
   }
@@ -24,7 +29,13 @@ module.exports = function(req, res) {
     amazon_link = "<a href='" + amazon_link + "' ><img src='https://i.imgsafe.org/4514322.png'></a>"
   }
 
+  console.log(apple_link)
+  console.log(google_link)
+  console.log(windows_link)
+  console.log(amazon_link)
+
   var html = "<span>" + apple_link + google_link + windows_link + amazon_link +"</span>"
+  console.log(html)
 
   // var html = '<span><img src="https://zello.com/img/appstore.png"></span>'
 
