@@ -5,7 +5,7 @@ var app = express();
 var cors = require('cors');
 
 var corsOptions = {
-  origin: true,
+  origin: 'https://compose.mixmax.com',
   credentials: true
 };
 
