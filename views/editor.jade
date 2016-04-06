@@ -1,0 +1,34 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    title Mixmax · App Icon
+    // Mixmax SDK
+
+    script(defer='', src='https://d1xa36cy0xt122.cloudfront.net/v1/Mixmax.js')
+    script(src='//code.jquery.com/jquery-2.1.3.min.js')
+    script(src='/js/editor.js')
+
+    link(rel='stylesheet', href='/styles.css')
+    link(href='//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,900,900italic,300italic,300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+
+  body
+    .flex.container
+      form#main-form
+        .input-group.input-group-lg
+          span#apple.input-group-addon
+            img(src='/img/apple.png')
+          input.form-control(type='text', placeholder='https://geo.itunes.apple.com/us/app/spotify...', aria-describedby='apple', value='#{apple || ""}')
+        .input-group.input-group-lg
+          span#google.input-group-addon
+            img(src='/img/google.png')
+          input.form-control(type='text', placeholder='http://play.google.com/store/apps/details?id=1', aria-describedby='google', value='#{google || ""}')
+        .input-group.input-group-lg
+          span#amazon.input-group-addon
+            img(src='/img/amazon.png')
+          input.form-control(type='text', placeholder='http://www.amazon.com/gp/mas/dl/android/com.app.www', aria-describedby='amazon', value='#{amazon || ""}')
+        .submit
+          input.pull-right.btn.btn-success.btn-lg(type='submit', value='Add Icons')
+

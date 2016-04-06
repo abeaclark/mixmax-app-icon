@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-
+var url = require('url')
 var app = express();
 var cors = require('cors');
 
@@ -11,6 +11,8 @@ var corsOptions = {
 
 app.use(cors(corsOptions))
 
+app.set('view engine', 'jade');
+
 // Serve assets in /public.
 app.use(express.static(__dirname + '/public'));
 
@@ -19,7 +21,15 @@ app.use(bodyParser.urlencoded());
 
 
 
-// The editor interface.
+app.get('/editor', function (req, res) {
+  var queryData = url.parse(req.url, true).query
+  var user = queryData.user
+  var data = JSON.parse(queryData.data)
+
+  res.render('editor', { 'apple': data['apple'], 'google': data['google'], 'amazon': data['amazon'],});
+});
+
+
 app.get('/editor', function(req, res) {
   res.sendFile(__dirname + '/editor.html');
 });
