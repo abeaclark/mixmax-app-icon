@@ -37,7 +37,7 @@ module.exports = function(req, res) {
   console.log(windows_link)
   console.log(amazon_link)
 
-  var html = "<div style="width: 100%;">" + apple_link + google_link + windows_link + amazon_link +"</div>"
+  var html = "<div style='width: 100%;'>" + apple_link + google_link + windows_link + amazon_link +"</div>"
   console.log(html)
 
   // var html = '<span><img src="https://zello.com/img/appstore.png"></span>'
