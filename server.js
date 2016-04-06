@@ -9,7 +9,7 @@ var corsOptions = {
   credentials: true
 };
 
-app.use(cors())
+app.use(cors(corsOptions))
 
 // Serve assets in /public.
 app.use(express.static(__dirname + '/public'));
