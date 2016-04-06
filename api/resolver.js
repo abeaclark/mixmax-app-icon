@@ -3,10 +3,13 @@ module.exports = function(req, res) {
   var data = req.body.params
   console.log(data)
 
-  var apple_link = data['apple'] || ''
-  var google_link = data['google'] || ''
-  var windows_link = data['windows'] || ''
-  var amazon_link = data['amazon'] || ''
+  console.log('data.apple', data.apple)
+
+
+  var apple_link = data['apple']
+  var google_link = data['google']
+  var windows_link = data['windows']
+  var amazon_link = data['amazon']
 
   console.log(apple_link)
   console.log(google_link)
