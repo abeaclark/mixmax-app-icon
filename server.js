@@ -23,10 +23,14 @@ app.use(bodyParser.urlencoded());
 
 app.get('/editor', function (req, res) {
   var queryData = url.parse(req.url, true).query
-  var user = queryData.user
-  var data = JSON.parse(queryData.data)
 
-  res.render('editor', { 'apple': data['apple'], 'google': data['google'], 'amazon': data['amazon'],});
+  if (queryData.data){
+    var data = JSON.parse(queryData.data)
+    res.render('editor', { 'apple': data['apple'], 'google': data['google'], 'amazon': data['amazon'],});
+  } else {
+    res.render('editor', {});
+  }
+
 });
 
 
